@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Lista de Sócios Torcedores</h2>
+  <ul class="action-buttons">
+    <li><a href="{% url 'cadastrar_socio' %}">Cadastrar novo sócio</a></li>
+  </ul>
+  <ul>
+    {% for socio in socios %}
+      <li>
+        {{ socio.nome }} - {{ socio.email }} - {{ socio.telefone }}
+        <div class="action-buttons">
+          <a class="edit" href="{% url 'editar_socio' socio.pk %}">Editar</a>
+          <a class="delete" href="{% url 'excluir_socio' socio.pk %}">Excluir</a>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,96 @@
+/* sociotorcedor/static/css/style.css */
+
+/* Reset de estilos */
+body, h1, h2, h3, p, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;  /* Cinza escuro */
+    color: #fff;  /* Branco */
+}
+
+#content {
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    color: #cc0000;  /* Vermelho */
+}
+
+/* Estilo para lista de sócios */
+ul {
+    list-style-type: none;
+}
+
+li {
+    background-color: #444;  /* Cinza mais claro */
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+/* Estilo para formulários */
+form {
+    background-color: #555;  /* Cinza ainda mais claro */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #cc0000;  /* Vermelho */
+    color: #fff;  /* Branco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #990000;  /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Estilo para botões 3D */
+button.three-d {
+    box-shadow: 0 4px #666;
+    position: relative;
+}
+
+button.three-d:hover {
+    top: 4px;
+    box-shadow: none;
+}
+
+/* Estilo específico para botões de ação na lista de sócios */
+.action-buttons a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.action-buttons a.edit {
+    background-color: #333;  /* Cinza escuro */
+}
+
+.action-buttons a.delete {
+    background-color: #cc0000;  /* Vermelho */
+}
+
+.action-buttons a:hover {
+    opacity: 0.8;
+}
